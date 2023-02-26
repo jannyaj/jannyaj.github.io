@@ -1,0 +1,44 @@
+div{
+    margin: 100px 100px 100px 100px;
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    transition:transform 3s;
+}
+div:hover{
+    /* background-color: cadetblue; */
+     /* transform: translate(150px , 60px);  */
+     /* transform: rotate(15turn);  */
+     /* transform:scale(-100%) ; */
+     /* transform: skewY(30deg); */
+     /* transform:perspective(1500px) rotatey(180deg) */
+}
+@keyframes goo {
+    from{
+        transform: translate(0px , 0px);   
+    }
+    to{
+        transform: translate(1000px , 0px); 
+    }
+     
+}
+.block {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://www.nastol.com.ua/download.php?img=201110/2560x1600/nastol.com.ua-10206.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation:goo 3s infinite cubic-bezier(.99,1,.6,.61) ;
+}
+
+@keyframes boo {
+    0%{
+        transform: translate(1110px , 0px) rotate(1turn)
+    }
+    50%{
+        transform: translate(0px , 110px)
+    }
+    100%{
+    transform: translate(1110px , 0px)
+    }
+}
